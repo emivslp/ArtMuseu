@@ -1,0 +1,75 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#pagina{
+    width: 100%;
+    height: auto;
+    margin: 0pc auto;
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 80%;
+    background-color: #2A2B2A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+#menu{
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+#menuHamburguer{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    display: none;
+}
+
+/* @media screen and (max-width : 730px){   
+    fazer isso é a mesma coisa que fazer o link no html, tem que copiar essas informacoes que a gente coloca: pra screen - tela - and... configuração pra qnd passar desse valor, ajustar.
+} */
+
+#menuMob{
+    width: 100%;
+    height: 0%;
+    background-color: #2A2B2A;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    width: 80%;
+}
+
+@media screen and (min-width : 731px) {
+    #menuMob{
+        display: none;
+    }
+}

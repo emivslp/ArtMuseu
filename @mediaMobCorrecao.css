@@ -1,0 +1,14 @@
+/* header{
+    background-color: brown;
+    teste para ver se esta funcionando, qnd muda o tamanho, muda a cor do nav
+} */
+
+#menu{
+    display: none;
+    /* sumir com o menu */    
+}
+
+#menuHamburguer{
+    display: block;
+    /* para aparecer o menu hamburguer */
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./correcaostyle.css">
+    <link rel="stylesheet" href="./@mediaMobCorrecao.css" media="screen and (max-width : 730px)">
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <h1>ArtMuseum</h1>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#" class="link">HOME</a></li>
+                    <li><a href="#" class="link">GALERIA</a></li>
+                    <li><a href="#" class="link">CONTATO</a></li>
+                </ul>
+            </nav>
+            <button id="menuHamburguer" onclick="mostrar()"> 
+                - 
+            </button>           
+        </header>
+        <nav id="menuMob">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">GALERIA</a></li>
+                <li><a href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+        <main>
+            <picture>
+                <source media="(orientation : landscape) and(max-heigth : 500px)" class="foto" src="images/elizabethLandscape.png">
+                <source media="" src="images/elizabethMenor.png" class="foto">
+                <img src="images/elizabeth.jpg" alt="" class="foto">
+            </picture>
+        </main>
+        <footer></footer>
+        <script>
+            function mostrar(){
+                if(menuMob.style.display == "none"){
+                    menuMob.style.display = "flex"
+                } else {
+                    menuMob.style.display = "none"
+                } 
+            }
+        </script>
+
+    </div>
+    
+</body>
+</html>
